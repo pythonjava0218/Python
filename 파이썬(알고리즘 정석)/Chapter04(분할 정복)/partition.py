@@ -1,5 +1,4 @@
 # 두 요소의 위치를 바꿔주는 helper function
-# 두 요소의 위치를 바꿔주는 helper function
 def swap_elements(my_list, index1, index2):
     # 코드를 작성하세요.
     my_list[index1], my_list[index2] = my_list[index2], my_list[index1]
@@ -18,7 +17,7 @@ def partition(my_list, start, end):
 
     for i in range(start, end + 1):
 
-        if my_list[i] < my_list[pivot]:
+        if my_list[i] <= my_list[pivot]:
             swap_elements(my_list, i, b)
             b += 1
 
