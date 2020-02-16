@@ -9,12 +9,12 @@ def swap_elements(my_list, index1, index2):
 def partition(my_list, start, end):
     # 코드를 작성하세요.
     pivot = end
-
+    b = start
     '''
     기준점 보다 큰 값 = 오른쪽
     기준점 보다 작은 값 = 왼쪽
     '''
-    b = 0
+    
 
     for i in range(start, end):
 
