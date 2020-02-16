@@ -13,9 +13,8 @@ def partition(my_list, start, end):
     기준점 보다 큰 값 = 오른쪽
     기준점 보다 작은 값 = 왼쪽
     '''
-    b = 0
-
-    for i in range(start, end + 1):
+    b = start
+    for i in range(start, end):
 
         if my_list[i] <= my_list[pivot]:
             swap_elements(my_list, i, b)
